@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio</title>
+  <link rel="shortcut icon" href="img/pet_commands_summon_60px.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+    crossorigin="anonymous"></script>
+  <div class="contenedor">
+    <header>
+      <div class="in-flex">
+        <img src="img/cat_60px.png" alt="">
+        <h1 style="font-size: 100px;">GATETES</h1>
+        <img src="img/cat_back_view_60px.png" alt="">
+      </div>
+      <br>
+      <ul class="links">
+        <!-- BOTON DE TIENDA IZQUIERDO -->
+        <section id="tienda">
+          <a class="btn btn-Danger" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+            aria-controls="offcanvasExample">
+            <h3 style="color: aliceblue;">Tienda</h3>
+          </a>
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                <h1>Categorias</h1>
+              </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body col-8">
+              <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true"
+                class="scrollspy-example-2 row col-12" tabindex="0">
+                <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 nav nav-pills flex-column">
+                  <a class="nav-link" href="tienda.html">
+                    <h4>Tienda General</h4>
+                  </a>
+                  <a class="nav-link" href="tienda.html#GATOS">
+                    <h5>Gatos</h5>
+                  </a>
+                  <a class="nav-link" href="tienda.html#PERROS">
+                    <h5>Perros</h5>
+                  </a>
+                  <a class="nav-link" href="tienda.html#RATAS">
+                    <h5>Roedores</h5>
+                  </a>
+                  <a class="nav-link" href="tienda.html#AVES">
+                    <h5>Aves</h5>
+                  </a>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- BARRA DE BUSQUEDA Y BOTON -->
+        <div class="wrap">
+          <div class="search">
+            <input type="search" class="searchTerm" placeholder="Que esta buscando?">
+            <button type="submit" class="searchButton">
+              <img src="img/search_20px.png" alt="">
+            </button>
+          </div>
+        </div>
+        <!-- BOTON DE DE USUARIO DERECHO -->
+        <section id="usuario">
+          <button class="btn btn-Danger" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight">
+            <h3 style="color: aliceblue;">Usuario</h3>
+          </button>
+          </a>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                <h1>Perfil de usuario</h1>
+              </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body col-8">
+              <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true"
+                class="scrollspy-example-2 row col-12" tabindex="0">
+                <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 nav nav-pills flex-column">
+                  <a class="nav-link" href="perfil.html">
+                    <h5>Perfil</h5>
+                  </a>
+                  <a class="nav-link" href="registro.html">
+                    <h5>Registrarte</h5>
+                  </a>
+                  <a class="nav-link" href="envio.html">
+                    <h5>Ver envios</h5>
+                  </a>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- SECCION DE CONTACTO -->
+        <div class="redes">
+          <div class="redes">
+            <h6 style="color: aliceblue; text-shadow: 1px 1px 2px #3c5716, 0 0 1em #3c5716, 0 0 0.2em #3c5716;">
+              Contactanos</h6>
+          </div>
+          <div class="redes"><a href=""><img src="img/whatsapp_30px.png" alt=""></a></div>
+          <div class="redes"><a href=""><img src="img/instagram_30px.png" alt=""></a></div>
+          <div class="redes"><a href=""><img src="img/facebook_30px.png" alt=""></a></div>
+        </div>
+      </ul>
+    </header>
+    <!-- CARRUSEL -->
+    <main>
+      <div class="slide">
+        <div class="slide-inner">
+          <input class="slide-open" type="radio" id="slide-1" name="slide" aria-hidden="true" hidden=""
+            checked="checked">
+          <div class="slide-item">
+            <img src="img/385ed284b2e50706b3187184_rw_1920.jpg">
+          </div>
+          <input class="slide-open" type="radio" id="slide-2" name="slide" aria-hidden="true" hidden="">
+          <div class="slide-item">
+            <img src="img/cat-wire-404.jpg">
+          </div>
+          <input class="slide-open" type="radio" id="slide-3" name="slide" aria-hidden="true" hidden="">
+          <div class="slide-item">
+            <img src="img/istockphoto-1373149898-612x612.png">
+          </div>
+          <label for="slide-3" class="slide-control prev control-1">‹</label>
+          <label for="slide-2" class="slide-control next control-1">›</label>
+          <label for="slide-1" class="slide-control prev control-2">‹</label>
+          <label for="slide-3" class="slide-control next control-2">›</label>
+          <label for="slide-2" class="slide-control prev control-3">‹</label>
+          <label for="slide-1" class="slide-control next control-3">›</label>
+          <ol class="slide-indicador">
+            <li>
+              <label for="slide-1" class="slide-circulo">•</label>
+            </li>
+            <li>
+              <label for="slide-2" class="slide-circulo">•</label>
+            </li>
+            <li>
+              <label for="slide-3" class="slide-circulo">•</label>
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="secciones">
+        <h2 style="color: aliceblue; text-shadow: 1px 1px 2px #3c5716, 0 0 1em #3c5716, 0 0 0.2em #3c5716;">
+          <strong>Novedades</strong></h2>
+        <hr size="4" color="white">
+      </div>
+      <!-- ARTICULOS -->
+      <section class="articulos">
+        <div class="articulo">
+          <img
+            src="img/Accesorios-para-mascotas-personalizados-suministros-de-productos-de-la-Ronda-de-PVC-resistente-al-agua-mejor-Pet-fabricante-de-camas-de-lujo-al-aire-libre-perro-gato-mascot.jpg"
+            alt="">
+          <div class="info">
+            <div class="nombre">
+              <h4 style="color: aliceblue; text-shadow: 1px 1px 2px #3c5716, 0 0 1em #3c5716, 0 0 0.2em #3c5716;">Cama
+                para gatos</h4>
+              <h2 style="color: aliceblue; text-shadow: 1px 1px 2px #3c5716, 0 0 1em #3c5716, 0 0 0.2em #3c5716;">
+                <strong>13.990 CLP</strong></h2>
+            </div>
+            <div class="puntaje">
+              <p><strong>5</strong></p>
+              <img src="img/star_50px.png" alt="">
+            </div>
+          </div>
+          <br>
+          <a href="">Comprar</a>
+        </div>
+        <div class="articulo">
+          <img src="img/41kf6SRxrpL._SL250_.jpg" alt="">
+          <div class="info">
+            <div class="nombre">
+              <h4 style="color: aliceblue; text-shadow: 1px 1px 2px #3c5716, 0 0 1em #3c5716, 0 0 0.2em #3c5716;">Jaula
+                para mascotas</h4>
+              <h2 style="color: aliceblue; text-shadow: 1px 1px 2px #3c5716, 0 0 1em #3c5716, 0 0 0.2em #3c5716;">
+                <strong>18.990 CLP</strong></h2>
+            </div>
+            <div class="puntaje">
+              <p><Strong>4,5</Strong></p>
+              <img src="img/star_50px.png" alt="">
+            </div>
+          </div>
+          <br>
+          <a href="">Comprar</a>
+        </div>
+        <div class="articulo">
+          <img src="img/cama-mascotas-real-mdrid.jpg" alt="">
+          <div class="info">
+            <div class="nombre">
+              <h4 style="color: aliceblue; text-shadow: 1px 1px 2px #3c5716, 0 0 1em #3c5716, 0 0 0.2em #3c5716;">Cama
+                para mascotas RM</h4>
+              <h2 style="color: aliceblue; text-shadow: 1px 1px 2px #3c5716, 0 0 1em #3c5716, 0 0 0.2em #3c5716;">
+                <strong>14.990 CLP</strong></h2>
+            </div>
+            <div class="puntaje">
+              <p><Strong>5</Strong></p>
+              <img src="img/star_50px.png" alt="">
+            </div>
+          </div>
+          <br>
+          <a href="">Comprar</a>
+        </div>
+        <div class="articulo">
+          <img src="img/dispensador-comedero-xl-pellet-alimento-perros-mascotas.jpg" alt="">
+          <div class="info">
+            <div class="nombre">
+              <h4 style="color: aliceblue; text-shadow: 1px 1px 2px #3c5716, 0 0 1em #3c5716, 0 0 0.2em #3c5716;">
+                Dispensador de comida</h4>
+              <h2 style="color: aliceblue; text-shadow: 1px 1px 2px #3c5716, 0 0 1em #3c5716, 0 0 0.2em #3c5716;">
+                <strong>9.990 CLP</strong></h2>
+            </div>
+            <div class="puntaje">
+              <p><Strong>4</Strong></p>
+              <img src="img/star_50px.png" alt="">
+            </div>
+          </div>
+          <br>
+          <a href="">Comprar</a>
+        </div>
+        <div class="articulo">
+          <img src="img/frontpro-antiparasitario-masticable-4-a-10-kg.jpg" alt="">
+          <div class="info">
+            <div class="nombre">
+              <h4 style="color: aliceblue; text-shadow: 1px 1px 2px #3c5716, 0 0 1em #3c5716, 0 0 0.2em #3c5716;">
+                Antiparasitario para perros</h4>
+              <h2 style="color: aliceblue; text-shadow: 1px 1px 2px #3c5716, 0 0 1em #3c5716, 0 0 0.2em #3c5716;">
+                <strong>12.990 CLP</strong></h2>
+            </div>
+            <div class="puntaje">
+              <p><Strong>5</Strong></p>
+              <img src="img/star_50px.png" alt="">
+            </div>
+          </div>
+          <br>
+          <a href="">Comprar</a>
+        </div>
+      </section>
+
+      <!-- gato -->
+      <div class="secciones">
+        <h2 id="GATOS" style="color: aliceblue; text-shadow: 1px 1px 2px #3c5716, 0 0 1em #3c5716, 0 0 0.2em #3c5716;">
+          <strong>Felinos</strong></h2>
+      </div>
+      <hr size="4" color="white">
+      <section class="articulos">
+        <div class="articulo">
+          <img src="gatos/318.png" alt="">
+          <div class="info">
+            <div class="nombre">
+              <h4 style="color: aliceblue; text-shadow: 1px 1px 2px #3c5716, 0 0 1em #3c5716, 0 0 0.2em #3c5716;">Collar
+                antiparasitario</h4>
+              <h2 style="color: aliceblue; text-shadow: 1px 1px 2px #3c5716, 0 0 1em #3c5716, 0 0 0.2em #3c5716;">
+                <strong>9.990 CLP</strong></h2>
+            </div>
+            <div class="puntaje">
+              <p><Strong>4,5</Strong></p>
+              <img src="img/star_50px.png" alt="">
+            </div>
+          </div>
+          <br>
+          <a href="">Comprar</a>
+        </div>
+        <div class="articulo">
+          <img src="gatos/4266-min.png" alt="">
+          <div class="info">
+            <div class="nombre">
+              <h4 style="color: aliceblue; text-shadow: 1px 1px 2px #3c5716, 0 0 1em #3c5716, 0 0 0.2em #3c5716;">
+                Disfraz rodaja de pan</h4>
+              <h2 style="color: aliceblue; text-shadow: 1px 1px 2px #3c5716, 0 0 1em #3c5716, 0 0 0.2em #3c5716;">
+                <strong>8.990 CLP</strong></h2>
+            </div>
+            <div class="puntaje">
+              <p><Strong>5</Strong></p>
+              <img src="img/star_50px.png" alt="">
+            </div>
+          </div>
+          <br>
+          <a href="">Comprar</a>
+        </div>
+        <div class="articulo">
+          <img src="gatos/bioline-limpieza-almohadillas-para-gatos.png" alt="">
+          <div class="info">
+            <div class="nombre">
+              <h4 style="color: aliceblue; text-shadow: 1px 1px 2px #3c5716, 0 0 1em #3c5716, 0 0 0.2em #3c5716;">
+                Limpieza de almohadillas</h4>
+              <h2 style="color: aliceblue; text-shadow: 1px 1px 2px #3c5716, 0 0 1em #3c5716, 0 0 0.2em #3c5716;">
+                <strong>14.990 CLP</strong></h2>
+            </div>
+            <div class="puntaje">
+              <p><Strong>5</Strong></p>
+              <img src="img/star_50px.png" alt="">
+            </div>
+          </div>
+          <br>
+          <a href="">Comprar</a>
+        </div>
+        <div class="articulo">
+          <img src="gatos/Club-PG-Rueda-para-gatos-cafe-60-CM.png" alt="">
+          <div class="info">
+            <div class="nombre">
+              <h4 style="color: aliceblue; text-shadow: 1px 1px 2px #3c5716, 0 0 1em #3c5716, 0 0 0.2em #3c5716;">Rueda
+                para gatos cafe</h4>
+              <h2 style="color: aliceblue; text-shadow: 1px 1px 2px #3c5716, 0 0 1em #3c5716, 0 0 0.2em #3c5716;">
+                <strong>19.990 CLP</strong></h2>
+            </div>
+            <div class="puntaje">
+              <p><Strong>3</Strong></p>
+              <img src="img/star_50px.png" alt="">
+            </div>
+          </div>
+          <br>
+          <a href="">Comprar</a>
+        </div>
+        <div class="articulo">
+          <img src="gatos/rascador-refugio.png" alt="">
+          <div class="info">
+            <div class="nombre">
+              <h4 style="color: aliceblue; text-shadow: 1px 1px 2px #3c5716, 0 0 1em #3c5716, 0 0 0.2em #3c5716;">
+                Rascador refugio </h4>
+              <h2 style="color: aliceblue; text-shadow: 1px 1px 2px #3c5716, 0 0 1em #3c5716, 0 0 0.2em #3c5716;">
+                <strong>17.990 CLP</strong></h2>
+            </div>
+            <div class="puntaje">
+              <p><Strong>4,5</Strong></p>
+              <img src="img/star_50px.png" alt="">
+            </div>
+          </div>
+          <br>
+          <a href="">Comprar</a>
+        </div>
+      </section>
+      <!-- perro -->
+
+      <div class="secciones">
+        <h2 id="PERROS" style="color: aliceblue; text-shadow: 1px 1px 2px #3c5716, 0 0 1em #3c5716, 0 0 0.2em #3c5716;">
+          <strong>Caninos</strong></h2>
+        <hr size="4" color="white">
+      </div>
+
+      <section class="articulos">
+        <div class="articulo">
+          <img src="perros/71hCAJHszAL.png" alt="">
+          <div class="info">
+            <div class="nombre">
+              <h4 style="color: aliceblue; text-shadow: 1px 1px 2px #3c5716, 0 0 1em #3c5716, 0 0 0.2em #3c5716;">
+                Collares para perro</h4>
+              <h2 style="color: aliceblue; text-shadow: 1px 1px 2px #3c5716, 0 0 1em #3c5716, 0 0 0.2em #3c5716;">
+                <strong>4.990 CLP</strong></h2>
+            </div>
+            <div class="puntaje">
+              <p><Strong>3,5</Strong></p>
+              <img src="img/star_50px.png" alt="">
+            </div>
+          </div>
+          <br>
+          <a href="">Comprar</a>
+        </div>
+        <div class="articulo">
+          <img src="perros/halti-no-pull-harness.png" alt="">
+          <div class="info">
+            <div class="nombre">
+              <h4 style="color: aliceblue; text-shadow: 1px 1px 2px #3c5716, 0 0 1em #3c5716, 0 0 0.2em #3c5716;">Arnés
+                para perro </h4>
+              <h2 style="color: aliceblue; text-shadow: 1px 1px 2px #3c5716, 0 0 1em #3c5716, 0 0 0.2em #3c5716;">
+                <strong>12.990 CLP</strong></h2>
+            </div>
+            <div class="puntaje">
+              <p><Strong>4</Strong></p>
+              <img src="img/star_50px.png" alt="">
+            </div>
+          </div>
+          <br>
+          <a href="">Comprar</a>
+        </div>
+        <div class="articulo">
+          <img
+            src="perros/Cascos-de-pl-stico-ABS-para-motocicleta-protector-para-perros-y-gatos-color-negro-a-la.jpg_.png"
+            alt="">
+          <div class="info">
+            <div class="nombre">
+              <h4 style="color: aliceblue; text-shadow: 1px 1px 2px #3c5716, 0 0 1em #3c5716, 0 0 0.2em #3c5716;">Casco
+                motociclista de proteccion </h4>
+              <h2 style="color: aliceblue; text-shadow: 1px 1px 2px #3c5716, 0 0 1em #3c5716, 0 0 0.2em #3c5716;">
+                <strong>9.990 CLP</strong></h2>
+            </div>
+            <div class="puntaje">
+              <p><Strong>5</Strong></p>
+              <img src="img/star_50px.png" alt="">
+            </div>
+          </div>
+          <br>
+          <a href="">Comprar</a>
+        </div>
+        <div class="articulo">
+          <img src="perros/chaleco-acolchado-reversible-dos-azules-noruega-s25cm.jpg" alt="">
+          <div class="info">
+            <div class="nombre">
+              <h4 style="color: aliceblue; text-shadow: 1px 1px 2px #3c5716, 0 0 1em #3c5716, 0 0 0.2em #3c5716;">
+                Chaleco acolchado azul</h4>
+              <h2 style="color: aliceblue; text-shadow: 1px 1px 2px #3c5716, 0 0 1em #3c5716, 0 0 0.2em #3c5716;">
+                <strong>14.990 CLP</strong></h2>
+            </div>
+            <div class="puntaje">
+              <p><Strong>4,5</Strong></p>
+              <img src="img/star_50px.png" alt="">
+            </div>
+          </div>
+          <br>
+          <a href="">Comprar</a>
+        </div>
+        <div class="articulo">
+          <img src="perros/Botella-de-agua-port-til-para-perros-peque-os-y-grandes-producto-de-viaje-para-cachorros.png"
+            alt="">
+          <div class="info">
+            <div class="nombre">
+              <h4 style="color: aliceblue; text-shadow: 1px 1px 2px #3c5716, 0 0 1em #3c5716, 0 0 0.2em #3c5716;">
+                Botella de agua portatil </h4>
+              <h2 style="color: aliceblue; text-shadow: 1px 1px 2px #3c5716, 0 0 1em #3c5716, 0 0 0.2em #3c5716;">
+                <strong>13.990 CLP</strong></h2>
+            </div>
+            <div class="puntaje">
+              <p><Strong>5</Strong></p>
+              <img src="img/star_50px.png" alt="">
+            </div>
+          </div>
+          <br>
+          <a href="">Comprar</a>
+        </div>
+      </section>
+      <!-- ratoness -->
+      <div class="secciones">
+        <h2 id="RATAS" style="color: aliceblue; text-shadow: 1px 1px 2px #3c5716, 0 0 1em #3c5716, 0 0 0.2em #3c5716;">
+          <strong>Roedores</strong></h2>
+      </div>
+      <hr size="4" color="white">
+
+      <section class="articulos">
+        <div class="articulo">
+          <img src="roedores/00bc52d515998dcbf6dcd584b846d590-product.png" alt="">
+          <div class="info">
+            <div class="nombre">
+              <h4 style="color: aliceblue; text-shadow: 1px 1px 2px #3c5716, 0 0 1em #3c5716, 0 0 0.2em #3c5716;">Jaula
+                para hamster </h4>
+              <h2 style="color: aliceblue; text-shadow: 1px 1px 2px #3c5716, 0 0 1em #3c5716, 0 0 0.2em #3c5716;">
+                <strong>19.990 CLP</strong></h2>
+            </div>
+            <div class="puntaje">
+              <p><Strong>4,5</Strong></p>
+              <img src="img/star_50px.png" alt="">
+            </div>
+          </div>
+          <br>
+          <a href="">Comprar</a>
+        </div>
+        <div class="articulo">
+          <img src="roedores/3431.png" alt="">
+          <div class="info">
+            <div class="nombre">
+              <h4 style="color: aliceblue; text-shadow: 1px 1px 2px #3c5716, 0 0 1em #3c5716, 0 0 0.2em #3c5716;">
+                Multivitaminico para ratones</h4>
+              <h2 style="color: aliceblue; text-shadow: 1px 1px 2px #3c5716, 0 0 1em #3c5716, 0 0 0.2em #3c5716;">
+                <strong>12.990 CLP</strong></h2>
+            </div>
+            <div class="puntaje">
+              <p><Strong>5</Strong></p>
+              <img src="img/star_50px.png" alt="">
+            </div>
+          </div>
+          <br>
+          <a href="">Comprar</a>
+        </div>
+        <div class="articulo">
+          <img src="roedores/4088.png" alt="">
+          <div class="info">
+            <div class="nombre">
+              <h4 style="color: aliceblue; text-shadow: 1px 1px 2px #3c5716, 0 0 1em #3c5716, 0 0 0.2em #3c5716;">Arnés
+                para hamster/raton</h4>
+              <h2 style="color: aliceblue; text-shadow: 1px 1px 2px #3c5716, 0 0 1em #3c5716, 0 0 0.2em #3c5716;">
+                <strong>9.990 CLP</strong></h2>
+            </div>
+            <div class="puntaje">
+              <p><Strong>3.5</Strong></p>
+              <img src="img/star_50px.png" alt="">
+            </div>
+          </div>
+          <br>
+          <a href="">Comprar</a>
+        </div>
+        <div class="articulo">
+          <img
+            src="roedores/Bolas-de-pl-stico-s-lido-para-correr-para-h-mster-accesorios-divertidos-para-animales-peque.jpg_Q90.jpg_.png"
+            alt="">
+          <div class="info">
+            <div class="nombre">
+              <h4 style="color: aliceblue; text-shadow: 1px 1px 2px #3c5716, 0 0 1em #3c5716, 0 0 0.2em #3c5716;">Bola
+                de plástico sólido</h4>
+              <h2 style="color: aliceblue; text-shadow: 1px 1px 2px #3c5716, 0 0 1em #3c5716, 0 0 0.2em #3c5716;">
+                <strong>12.990 CLP</strong></h2>
+            </div>
+            <div class="puntaje">
+              <p><Strong>4</Strong></p>
+              <img src="img/star_50px.png" alt="">
+            </div>
+          </div>
+          <br>
+          <a href="">Comprar</a>
+        </div>
+        <div class="articulo">
+          <img src="roedores/2288.png" alt="">
+          <div class="info">
+            <div class="nombre">
+              <h4 style="color: aliceblue; text-shadow: 1px 1px 2px #3c5716, 0 0 1em #3c5716, 0 0 0.2em #3c5716;">Rueda
+                de heno del alfafa</h4>
+              <h2 style="color: aliceblue; text-shadow: 1px 1px 2px #3c5716, 0 0 1em #3c5716, 0 0 0.2em #3c5716;">
+                <strong>13.990 CLP</strong></h2>
+            </div>
+            <div class="puntaje">
+              <p><Strong>5</Strong></p>
+              <img src="img/star_50px.png" alt="">
+            </div>
+          </div>
+          <br>
+          <a href="">Comprar</a>
+        </div>
+      </section>
+      <!-- aves -->
+      <div class="secciones">
+        <h2 id="AVES" style="color: aliceblue; text-shadow: 1px 1px 2px #3c5716, 0 0 1em #3c5716, 0 0 0.2em #3c5716;">
+          <strong>Aves</strong></h2>
+      </div>
+      <hr size="4" color="white">
+
+      <section class="articulos">
+        <div class="articulo">
+          <img src="aves/101782.png" alt="">
+          <div class="info">
+            <div class="nombre">
+              <h4 style="color: aliceblue; text-shadow: 1px 1px 2px #3c5716, 0 0 1em #3c5716, 0 0 0.2em #3c5716;">Jaula
+                para aves metalica</h4>
+              <h2 style="color: aliceblue; text-shadow: 1px 1px 2px #3c5716, 0 0 1em #3c5716, 0 0 0.2em #3c5716;">
+                <strong>24.990 CLP</strong></h2>
+            </div>
+            <div class="puntaje">
+              <p><Strong>5</Strong></p>
+              <img src="img/star_50px.png" alt="">
+            </div>
+          </div>
+          <br>
+          <a href="">Comprar</a>
+        </div>
+        <div class="articulo">
+          <img src="aves/134602.png" alt="">
+          <div class="info">
+            <div class="nombre">
+              <h4 style="color: aliceblue; text-shadow: 1px 1px 2px #3c5716, 0 0 1em #3c5716, 0 0 0.2em #3c5716;">Jaula
+                para aves madera morada</h4>
+              <h2 style="color: aliceblue; text-shadow: 1px 1px 2px #3c5716, 0 0 1em #3c5716, 0 0 0.2em #3c5716;">
+                <strong>18.990 CLP</strong></h2>
+            </div>
+            <div class="puntaje">
+              <p><Strong>4,5</Strong></p>
+              <img src="img/star_50px.png" alt="">
+            </div>
+          </div>
+          <br>
+          <a href="">Comprar</a>
+        </div>
+        <div class="articulo">
+          <img src="aves/801.png" alt="">
+          <div class="info">
+            <div class="nombre">
+              <h4 style="color: aliceblue; text-shadow: 1px 1px 2px #3c5716, 0 0 1em #3c5716, 0 0 0.2em #3c5716;">
+                Portador de medicina</h4>
+              <h2 style="color: aliceblue; text-shadow: 1px 1px 2px #3c5716, 0 0 1em #3c5716, 0 0 0.2em #3c5716;">
+                <strong>9.990 CLP</strong></h2>
+            </div>
+            <div class="puntaje">
+              <p><Strong>4,5</Strong></p>
+              <img src="img/star_50px.png" alt="">
+            </div>
+          </div>
+          <br>
+          <a href="">Comprar</a>
+        </div>
+        <div class="articulo">
+          <img src="aves/avicomplex-600x600.png" alt="">
+          <div class="info">
+            <div class="nombre">
+              <h4 style="color: aliceblue; text-shadow: 1px 1px 2px #3c5716, 0 0 1em #3c5716, 0 0 0.2em #3c5716;">
+                Multivitaminico para aves</h4>
+              <h2 style="color: aliceblue; text-shadow: 1px 1px 2px #3c5716, 0 0 1em #3c5716, 0 0 0.2em #3c5716;">
+                <strong>14.990 CLP</strong></h2>
+            </div>
+            <div class="puntaje">
+              <p><Strong>5</Strong></p>
+              <img src="img/star_50px.png" alt="">
+            </div>
+          </div>
+          <br>
+          <a href="">Comprar</a>
+        </div>
+        <div class="articulo">
+          <img
+            src="aves/comederos-para-pajaros-alimentador-de-semillas-para-pajaros-para-todo-clima-comedero-para-pajaros-silvestres-para-colgar-en-el-jardin-al-aire-libre-P-13646809-51032647_1.png"
+            alt="">
+          <div class="info">
+            <div class="nombre">
+              <h4 style="color: aliceblue; text-shadow: 1px 1px 2px #3c5716, 0 0 1em #3c5716, 0 0 0.2em #3c5716;">
+                Comedero para pajaros
+              </h4>
+              <h2><strong
+                  style="color: aliceblue; text-shadow: 1px 1px 2px #3c5716, 0 0 1em #3c5716, 0 0 0.2em #3c5716;">17.990
+                  CLP</strong></h2>
+            </div>
+            <div class="puntaje">
+              <p><Strong>4,5</Strong></p>
+              <img src="img/star_50px.png" alt="">
+            </div>
+          </div>
+          <br>
+          <a href="">Comprar</a>
+          <br>
+          <br>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+
+</html>
